@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Grid sans Bootstrap</title>
+		<meta name="viewport" content="width=device=width, initial-scale=1, shrink-to-fit=no;">
+	</head>
+	<body>
+		<h1>
+			Card malade
+		</h1>
+		<div class="grid-card">
+			<div class="card">
+			  <img src="https://res.cloudinary.com/dgtwa5do0/image/upload/v1569935067/dave-shaw-kpw-JnwQpfA-unsplash_wjgyyi.jpg" class="card-img-top" alt="..." style="width: 100%;">
+			  <div class="card-body">
+			    <h5 class="card-title">Card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+			<div class="card">
+			  <img src="https://res.cloudinary.com/dgtwa5do0/image/upload/v1569935067/dave-shaw-kpw-JnwQpfA-unsplash_wjgyyi.jpg" class="card-img-top" alt="..." style="width: 100%;">
+				<div class="card-body">
+				    <h5 class="card-title">Card title</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+			<div class="card">
+			  <img src="https://res.cloudinary.com/dgtwa5do0/image/upload/v1569935067/dave-shaw-kpw-JnwQpfA-unsplash_wjgyyi.jpg" class="card-img-top" alt="..." style="width: 100%;">
+				  <div class="card-body">
+				    <h5 class="card-title">Card title</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+			<div class="card">
+			  <div id='map' style='width: 400px; height: 300px;'></div>
+				<script>
+				  mapboxgl.accessToken = 'pk.eyJ1IjoibGFib3VseWNsZW0iLCJhIjoiY2sxN292NG45MDFvajNqbXVyYnp5OWZpOSJ9.Vw9uzsQLuyHjiBO8tWeo3g';
+				  var map = new mapboxgl.Map({
+				    container: 'map',
+				    style: 'mapbox://styles/mapbox/streets-v11'
+				  });
+				</script>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
